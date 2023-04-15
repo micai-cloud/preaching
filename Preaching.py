@@ -43,7 +43,7 @@ def req(url,datastr):
     for job in jobdict:
         if job['rq'] == datastr:
             joblist = job['list']
-            print(datastr)
+            #print(datastr)
             num = 1
             for i in joblist:
                 mc = i['mc']
@@ -58,7 +58,7 @@ def req(url,datastr):
                 num += 1
             if content != '':
                 send(datastr,content)
-                print(content)
+                #print(content)
             break
 req(url=url,datastr=tomTime)
 #req(url=url,datastr='2023-04-17')
